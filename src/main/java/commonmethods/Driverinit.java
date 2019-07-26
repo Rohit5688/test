@@ -79,7 +79,7 @@ public class Driverinit {
 	}
 
 	public static WebDriver Gridinit(String Browser) {
-		String nodeURL = "http://192.168.1.7:5566/wd/hub";
+		String nodeURL = "http://192.168.43.100:5566/wd/hub";
 		String browser = Browser;
 		ChromeOptions chromeoptions = null;
 		FirefoxOptions ffoption = null;
@@ -88,7 +88,8 @@ public class Driverinit {
 			chromeoptions = new ChromeOptions();
 			DesiredCapabilities d = DesiredCapabilities.chrome();
 			d.setBrowserName("chrome");
-			d.setPlatform(Platform.WINDOWS);chromeoptions.setPageLoadStrategy(PageLoadStrategy.NONE);
+			d.setPlatform(Platform.WINDOWS);
+			chromeoptions.setPageLoadStrategy(PageLoadStrategy.NONE);
 			chromeoptions.addArguments("start-maximized");
 			chromeoptions.addArguments("enable-automation");
 			// options.addArguments("--headless");

@@ -2,14 +2,15 @@ package test.PageObjectModel;
 
 import java.io.IOException;
 import java.util.ArrayList;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 import PageActions.LandingPageActions;
 import PageActions.ProductDetailPage;
 import PageActions.ProductResultPage;
@@ -17,8 +18,7 @@ import PageActions.ShoppingCartPage;
 import commonmethods.Driverinit;
 import commonmethods.ReadExcel;
 
-public class TestScriptPOM {
-
+public class TestScriptGrid {
 	WebDriver driver;
 	String url = "https://www.amazon.in/";
 	ArrayList<String> value;
@@ -26,7 +26,7 @@ public class TestScriptPOM {
 	@BeforeTest
 	@Parameters("browser")
 	public void init(@Optional("chrome") String Browser) throws IOException {
-		driver = Driverinit.init(Browser);
+		driver = Driverinit.Gridinit(Browser);
 		value = ReadExcel.readData("src/test/java/resources", "Test.xlsx", "Mobile");
 	}
 
