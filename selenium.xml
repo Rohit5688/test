@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Amazon.in" thread-count="2" parallel="tests">	
 	<test name="AmazonTest_DataDriven">
-		<parameter name="browser" value="edge" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="test.PageObjectModel.TestScriptPOM" />
 		</classes>
