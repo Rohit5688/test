@@ -18,7 +18,7 @@ import commonmethods.Driverinit;
 import commonmethods.ReadExcel;
 
 public class TestScriptPOM {
-
+	//git demo
 	WebDriver driver;
 	String url = "https://www.amazon.in/";
 	ArrayList<String> value;
