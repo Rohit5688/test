@@ -10,3 +10,5 @@ debug.log
 /target/
 /.classpath
 /.project
+/*.xml
+/*.html
